@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <script type="module">
+        import '@polymer/iron-dropdown/iron-dropdown.js';
+        import './iron-dropdown.js'
+    </script>
+    <style>
+        #container {
+            display: inline-block;
+        }
+
+        iron-dropdown {
+            border: 1px solid gray;
+            background: white;
+            font-size: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <button onclick="dropdown.open();">open the iron-dropdown</button>
+        <iron-dropdown id="dropdown" no-overlap>
+            <div slot="dropdown-content">Hello!</div>
+        </iron-dropdown>
+    </div>
+</body>
+
+</html>

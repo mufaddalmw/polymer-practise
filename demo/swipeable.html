@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <script type="module">
+        import '@polymer/iron-swipeable-container/iron-swipeable-container.js';
+        import './swipeable.js';
+    </script>
+    <style>
+        .swiped-item {
+            color: #212529;
+            background-color: #ffc107;
+            padding: .75em 1.2em;
+            width: 300px;
+            margin: 5px auto;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .swiped-item--purple {
+            background-color: #563d7c;
+            color: #fff;
+        }
+        .swiped-item--blue {
+            background-color: #007bff;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <iron-swipeable-container>
+        <div class="swiped-item">I can be swiped</div>
+        <paper-card heading="Me too!"></paper-card>
+    </iron-swipeable-container>
+    
+    <iron-swipeable-container>
+        <div class="swiped-item swiped-item--purple">I can be swiped</div>
+        <paper-card heading="Me too!"></paper-card>
+    </iron-swipeable-container>
+
+    <iron-swipeable-container>
+        <div class="swiped-item swiped-item--blue">I can be swiped</div>
+        <paper-card heading="Me too!"></paper-card>
+    </iron-swipeable-container>
+</body>
+
+</html>
